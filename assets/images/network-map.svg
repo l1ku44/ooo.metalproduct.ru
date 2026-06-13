@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" role="img" aria-labelledby="networkTitle networkDesc">
+  <title id="networkTitle">Схема подключения</title>
+  <desc id="networkDesc">Декоративная схема сети с центральным коммутатором и подключенными рабочими местами.</desc>
+  <defs>
+    <linearGradient id="netBg" x1="40" y1="30" x2="480" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#e6f4f5"/>
+    </linearGradient>
+    <filter id="netShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#162236" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect x="22" y="26" width="476" height="328" rx="18" fill="url(#netBg)"/>
+  <path d="M72 82h376M72 146h376M72 210h376M72 274h376M116 58v260M204 58v260M292 58v260M380 58v260" stroke="#0f5da8" stroke-opacity=".08" stroke-width="2"/>
+
+  <g fill="none" stroke="#168c8b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 188V98H132"/>
+    <path d="M260 188V98h126"/>
+    <path d="M260 188v92H132"/>
+    <path d="M260 188v92h126"/>
+  </g>
+
+  <g filter="url(#netShadow)">
+    <rect x="198" y="146" width="124" height="84" rx="12" fill="#123e62"/>
+    <path d="M222 174h76M222 196h54" stroke="#fff" stroke-opacity=".78" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="296" cy="196" r="8" fill="#3bd0c7"/>
+  </g>
+
+  <g filter="url(#netShadow)" fill="#fff">
+    <rect x="80" y="70" width="104" height="56" rx="10"/>
+    <rect x="334" y="70" width="104" height="56" rx="10"/>
+    <rect x="80" y="252" width="104" height="56" rx="10"/>
+    <rect x="334" y="252" width="104" height="56" rx="10"/>
+  </g>
+  <g stroke="#0f5da8" stroke-width="6" stroke-linecap="round">
+    <path d="M104 98h56M358 98h56M104 280h56M358 280h56"/>
+  </g>
+  <g fill="#168c8b">
+    <circle cx="132" cy="98" r="7"/>
+    <circle cx="386" cy="98" r="7"/>
+    <circle cx="132" cy="280" r="7"/>
+    <circle cx="386" cy="280" r="7"/>
+  </g>
+</svg>
