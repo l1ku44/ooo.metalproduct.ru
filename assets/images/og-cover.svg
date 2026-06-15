@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#dff1f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <path d="M80 120h1040M80 220h1040M80 320h1040M80 420h1040M80 520h1040M180 70v490M340 70v490M500 70v490M660 70v490M820 70v490M980 70v490" stroke="#0f5da8" stroke-opacity=".08" stroke-width="3"/>
+  <rect x="96" y="96" width="1008" height="438" rx="28" fill="#fff" fill-opacity=".72"/>
+  <rect x="156" y="156" width="94" height="94" rx="16" fill="#0f5da8"/>
+  <g transform="translate(171 171)">
+    <path d="M35.7 10 37 16.1a18 18 0 0 1 4.2 2.4l5.9-2 4.4 7.6-4.7 4.1a17.2 17.2 0 0 1 0 4.8l4.7 4.1-4.4 7.6-5.9-2A18 18 0 0 1 37 45.1L35.7 51h-8.8l-1.3-5.9a18 18 0 0 1-4.2-2.4l-5.9 2-4.4-7.6 4.7-4.1a17.2 17.2 0 0 1 0-4.8l-4.7-4.1 4.4-7.6 5.9 2a18 18 0 0 1 4.2-2.4L26.9 10z" fill="#fff"/>
+    <circle cx="31.3" cy="30.5" r="8.2" fill="#0f5da8"/>
+    <circle cx="31.3" cy="30.5" r="4.2" fill="#3bd0c7"/>
+  </g>
+  <text x="156" y="330" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#162236">ИТ-отдел ООО «Металлопродукция»</text>
+  <text x="156" y="396" font-family="Arial, sans-serif" font-size="30" fill="#66758a">Внутренний корпоративный портал для сотрудников предприятия</text>
+  <rect x="156" y="448" width="180" height="42" rx="8" fill="#168c8b"/>
+  <text x="184" y="477" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#fff">Тольятти</text>
+</svg>

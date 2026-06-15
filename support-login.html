@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация техподдержки | ИТ-отдел</title>
+  <meta name="description" content="Авторизация сотрудников технической поддержки ИТ-отдела ООО «Металлопродукция».">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f5da8">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-main">
+    <section class="auth-card" data-reveal>
+      <a class="brand auth-brand" href="index.html" aria-label="На главную страницу ИТ-отдела">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/images/favicon.svg" alt="" width="46" height="46">
+        </span>
+        <span>
+          <span class="brand-title">ИТ-отдел</span>
+          <span class="brand-subtitle">ООО «Металлопродукция»</span>
+        </span>
+      </a>
+
+      <p class="eyebrow">Служебный доступ</p>
+      <h1>Вход в панель заявок</h1>
+      <p>Раздел предназначен для сотрудников технической поддержки.</p>
+
+      <form class="auth-form" action="#" method="post" novalidate data-auth-form>
+        <label class="form-field">
+          <span>Логин</span>
+          <input type="text" name="login" autocomplete="username" required placeholder="login">
+          <small class="field-error"></small>
+        </label>
+
+        <label class="form-field">
+          <span>Пароль</span>
+          <input type="password" name="password" autocomplete="current-password" required placeholder="password">
+          <small class="field-error"></small>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Войти</button>
+        <p class="form-message" role="status" aria-live="polite" data-auth-message></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/support-auth.js"></script>
+</body>
+</html>

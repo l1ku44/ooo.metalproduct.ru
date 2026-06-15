@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | ИТ-отдел ООО «Металлопродукция»</title>
+  <meta name="description" content="Контакты отдела информационных технологий ООО «Металлопродукция»: часы работы, начальник отдела, форма обратной связи и расположение.">
+  <meta name="theme-color" content="#0f5da8">
+  <meta property="og:title" content="Контакты ИТ-отдела">
+  <meta property="og:description" content="Как связаться с отделом информационных технологий ООО «Металлопродукция».">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="assets/images/og-cover.svg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="На главную страницу ИТ-отдела">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/images/favicon.svg" alt="" width="46" height="46">
+        </span>
+        <span>
+          <span class="brand-title">ИТ-отдел</span>
+          <span class="brand-subtitle">ООО «Металлопродукция»</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Основная навигация" data-nav>
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="instructions.html">Инструкции</a>
+        <a class="nav-link active" href="contacts.html" aria-current="page">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero contacts-hero">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Связь с подразделением</p>
+          <h1>Контакты ИТ-отдела</h1>
+          <p>Обращайтесь в отдел информационных технологий по вопросам рабочих мест, доступа к корпоративным сервисам, 1С, печати, сети и информационной безопасности.</p>
+        </div>
+        <div class="contact-hero-card" data-reveal>
+          <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#headset"></use></svg>
+          <h2>Единая точка поддержки</h2>
+          <p>Плановые заявки принимаются в рабочее время. Критичные сбои, влияющие на производственный процесс, обрабатываются в приоритетном порядке.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container contact-grid">
+        <article class="contact-card large" data-reveal>
+          <p class="eyebrow">О работе отдела</p>
+          <h2>ИТ-отдел сопровождает цифровую инфраструктуру предприятия</h2>
+          <p>Специалисты отдела поддерживают рабочие станции, серверные сервисы, сетевое оборудование, корпоративные учетные записи, информационную безопасность и программные продукты, используемые сотрудниками ООО «Металлопродукция».</p>
+          <p>Для ускорения обработки обращения указывайте подразделение, кабинет, контактный телефон и подробное описание проблемы.</p>
+        </article>
+
+        <aside class="manager-card" data-reveal>
+          <div class="avatar" aria-hidden="true">Р</div>
+          <p class="eyebrow">Начальник отдела</p>
+          <h2>Д. А. Романов</h2>
+          <p>Начальник отдела информационных технологий ООО «Металлопродукция»</p>
+          <div>
+            <span class="badge">г. Тольятти</span>
+            <p></p>
+          <span class="badge">Коммунальная улица, 25</span>
+          </div>
+          
+        </aside>
+      </div>
+    </section>
+
+    <section class="section surface-band">
+      <div class="container contact-methods">
+        <article class="method-card" data-reveal>
+          <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#phone"></use></svg>
+          <h3>Внутренний телефон</h3>
+          <p>доб. 120</p>
+          <span>Для срочных неисправностей и уточнения статуса обращения.</span>
+        </article>
+        <article class="method-card" data-reveal>
+          <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#mail"></use></svg>
+          <h3>Корпоративная почта</h3>
+          <p>it@metalloprodukciya.local</p>
+          <span>Для заявок, скриншотов ошибок и согласований по доступам.</span>
+        </article>
+        <article class="method-card" data-reveal>
+          <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#clock"></use></svg>
+          <h3>Часы работы</h3>
+          <p>Пн-Пт, 08:00-17:00</p>
+          <span>Плановые работы согласуются заранее с подразделениями.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="feedback">
+      <div class="container form-map-grid">
+        <div class="feedback-panel" data-reveal>
+          <p class="eyebrow">Форма обратной связи</p>
+          <h2>Отправить обращение</h2>
+          <p>Форма отправляет заявку в базу данных ИТ-отдела.</p>
+
+          <form class="feedback-form" action="php/submit_request.php" method="post" novalidate data-feedback-form>
+            <div class="form-row">
+              <label class="form-field">
+                <span>ФИО</span>
+                <input type="text" name="name" autocomplete="name" data-label="ФИО" required minlength="3" placeholder="Иванов Иван Иванович">
+                <small class="field-error"></small>
+              </label>
+              <label class="form-field">
+                <span>Подразделение</span>
+                <input type="text" name="department" data-label="Подразделение" required minlength="2" placeholder="Бухгалтерия">
+                <small class="field-error"></small>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" data-label="Email" required placeholder="name@company.local">
+                <small class="field-error"></small>
+              </label>
+              <label class="form-field">
+                <span>Телефон</span>
+                <input type="tel" name="phone" data-label="Телефон" required placeholder="доб. 120">
+                <small class="field-error"></small>
+              </label>
+            </div>
+
+            <label class="form-field">
+              <span>Тема обращения</span>
+              <select name="topic" data-label="Тема обращения" required>
+                <option value="">Выберите тему</option>
+                <option>Рабочий компьютер</option>
+                <option>1С:Предприятие</option>
+                <option>Сеть и интернет</option>
+                <option>Принтер или сканер</option>
+                <option>Доступы и учетные записи</option>
+                <option>Другое</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+
+            <label class="form-field">
+              <span>Описание проблемы</span>
+              <textarea name="message" data-label="Описание проблемы" required minlength="20" placeholder="Опишите, что произошло, когда возникла ошибка и какие действия уже выполнялись"></textarea>
+              <small class="field-error"></small>
+            </label>
+
+            <label class="checkbox-field">
+              <input type="checkbox" name="privacy" data-label="Подтверждение" required>
+              <span>Подтверждаю корректность указанных данных и понимаю, что обращение будет обработано по внутреннему регламенту.</span>
+            </label>
+
+            <button class="btn btn-primary" type="submit">
+              <svg class="btn-icon" aria-hidden="true"><use href="assets/images/icons.svg#send"></use></svg>
+              Отправить обращение
+            </button>
+            <p class="form-message" role="status" aria-live="polite" data-form-message></p>
+          </form>
+        </div>
+
+        <aside class="map-panel" data-reveal>
+          <div class="map-card" aria-label="Декоративная карта расположения ИТ-отдела в Тольятти">
+            <span class="map-pin"></span>
+            <div class="map-lines"></div>
+            <div class="map-label">
+              <strong>ООО «Металлопродукция»</strong>
+              <span>Тольятти</span>
+            </div>
+          </div>
+          <div class="address-card">
+            <h3>Расположение</h3>
+            <p>ИТ-отдел находится на территории предприятия. Перед визитом согласуйте время со специалистом, чтобы подготовить оборудование или доступ к рабочему месту.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/images/favicon.svg" alt="" width="46" height="46">
+          </span>
+          <span>
+            <span class="brand-title">ИТ-отдел</span>
+            <span class="brand-subtitle">ООО «Металлопродукция»</span>
+          </span>
+        </a>
+        <p>Связь с отделом информационных технологий предприятия.</p>
+      </div>
+      <div>
+        <h2>Разделы</h2>
+        <a href="index.html">Главная</a>
+        <a href="instructions.html">Инструкции</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h2>Поддержка</h2>
+        <p>Тольятти, ООО «Металлопродукция»</p>
+        <p>В рабочие дни: 08:00-17:00</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> ООО «Металлопродукция»</span>
+      <span>Отдел информационных технологий</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Наверх" data-back-to-top>
+    <svg aria-hidden="true"><use href="assets/images/icons.svg#up"></use></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

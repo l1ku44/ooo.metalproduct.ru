@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель заявок | ИТ-отдел</title>
+  <meta name="description" content="Служебная панель обработки заявок сотрудников ООО «Металлопродукция».">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f5da8">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="support-page">
+  <header class="support-header">
+    <div class="container support-header-inner">
+      <a class="brand" href="index.html" aria-label="На главную страницу ИТ-отдела">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/images/favicon.svg" alt="" width="46" height="46">
+        </span>
+        <span>
+          <span class="brand-title">Панель заявок</span>
+          <span class="brand-subtitle">ООО «Металлопродукция»</span>
+        </span>
+      </a>
+      <button class="btn btn-secondary support-logout" type="button" data-logout>Выйти</button>
+    </div>
+  </header>
+
+  <main class="support-main">
+    <section class="container support-dashboard">
+      <div class="support-title">
+        <div>
+          <p class="eyebrow">Техническая поддержка</p>
+          <h1>Заявки сотрудников</h1>
+        </div>
+      </div>
+
+      <div class="support-stats" data-support-stats>
+        <article class="support-stat">
+          <span data-stat-total>0</span>
+          <p>Всего</p>
+        </article>
+        <article class="support-stat">
+          <span data-stat-new>0</span>
+          <p>Новые</p>
+        </article>
+        <article class="support-stat">
+          <span data-stat-progress>0</span>
+          <p>В работе</p>
+        </article>
+        <article class="support-stat">
+          <span data-stat-done>0</span>
+          <p>Завершены</p>
+        </article>
+      </div>
+
+      <div class="support-toolbar">
+        <label class="support-filter">
+          <span>Статус</span>
+          <select data-status-filter>
+    <option value="all">Все заявки</option>
+    <option value="новая">Новые</option>
+    <option value="в работе">В работе</option>
+    <option value="завершена">Завершены</option>
+    <option value="отклонена">Отклонены</option>
+</select>
+        </label>
+        <button class="btn btn-secondary" type="button" data-refresh>Обновить</button>
+      </div>
+
+      
+
+      <div class="requests-table-wrap">
+        <table class="requests-table">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Сотрудник</th>
+              <th>Контакты</th>
+              <th>Тема</th>
+              <th>Описание</th>
+              <th>Статус</th>
+              <th>Дата</th>
+              <th>Действия</th>
+            </tr>
+          </thead>
+          <tbody data-requests-body>
+            <tr>
+              <td colspan="8">Загрузка заявок...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Блок управления сотрудниками (виден только админу) -->
+<div class="staff-panel" data-staff-panel style="display: none;">
+  <hr>
+  <div class="support-toolbar" style="justify-content: space-between;">
+    <h2>Управление сотрудниками поддержки</h2>
+    <button class="btn btn-primary" type="button" data-staff-add>+ Добавить сотрудника</button>
+  </div>
+  <div class="requests-table-wrap">
+    <table class="requests-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Логин</th>
+          <th>ФИО</th>
+          <th>Роль</th>
+          <th>Действия</th>
+        </tr>
+      </thead>
+      <tbody data-staff-body>
+        <tr><td colspan="5">Загрузка...</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Модальное окно для добавления/редактирования сотрудника -->
+<div class="modal" data-staff-modal style="display: none;">
+  <div class="modal-content">
+    <span class="modal-close" data-modal-close>&times;</span>
+    <h3 data-modal-title>Добавление сотрудника</h3>
+    <form id="staff-form">
+      <input type="hidden" name="id" value="">
+      <label>Логин: <input type="text" name="username" required></label>
+      <label>Пароль: <input type="text" name="password" required></label>
+      <label>ФИО: <input type="text" name="full_name" required></label>
+      <label>Роль:
+        <select name="role">
+          <option value="operator">Оператор</option>
+          <option value="admin">Администратор</option>
+        </select>
+      </label>
+      <button type="submit" class="btn btn-primary">Сохранить</button>
+      <p class="form-message" data-staff-form-message></p>
+    </form>
+  </div>
+</div>
+
+    </section>
+  </main>
+
+  <script src="js/support-panel.js"></script>
+</body>
+</html>

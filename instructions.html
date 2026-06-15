@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инструкции | ИТ-отдел ООО «Металлопродукция»</title>
+  <meta name="description" content="Инструкции для сотрудников ООО «Металлопродукция»: сеть, 1С, техническая поддержка, неисправности компьютера и FAQ.">
+  <meta name="theme-color" content="#0f5da8">
+  <meta property="og:title" content="Инструкции ИТ-отдела">
+  <meta property="og:description" content="Регламенты и рекомендации по работе с корпоративными ИТ-сервисами.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="assets/images/og-cover.svg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="На главную страницу ИТ-отдела">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/images/favicon.svg" alt="" width="46" height="46">
+        </span>
+        <span>
+          <span class="brand-title">ИТ-отдел</span>
+          <span class="brand-subtitle">ООО «Металлопродукция»</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Основная навигация" data-nav>
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link active" href="instructions.html" aria-current="page">Инструкции</a>
+        <a class="nav-link" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">База знаний</p>
+          <h1>Инструкции для сотрудников</h1>
+          <p>Короткие регламенты и практические рекомендации по работе с корпоративной сетью, 1С, рабочими местами и технической поддержкой.</p>
+        </div>
+        <img src="assets/images/support-desk.svg" alt="Специалист технической поддержки за рабочим местом" width="520" height="360" data-reveal>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container instruction-nav" data-reveal>
+        <a href="#network">Корпоративная сеть</a>
+        <a href="#onec">1С:Предприятие</a>
+        <a href="#support-order">Техподдержка</a>
+        <a href="#computer">Неисправность ПК</a>
+        <a href="#no-network">Нет сети</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </section>
+
+    <section class="section surface-band" id="network">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Сеть предприятия</p>
+          <h2>Рекомендации по работе с корпоративной сетью</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#wifi"></use></svg>
+            <h3>Используйте только рабочие подключения</h3>
+            <p>Не подключайте личные роутеры, модемы и точки доступа к корпоративным розеткам. Такие устройства могут нарушить работу сети и создать риск утечки данных.</p>
+          </article>
+          <article class="info-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#folder"></use></svg>
+            <h3>Храните документы на сетевых ресурсах</h3>
+            <p>Рабочие файлы подразделений следует сохранять в согласованных общих папках. Это упрощает резервное копирование и доступ коллегам при замещении.</p>
+          </article>
+          <article class="info-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="assets/images/icons.svg#shield"></use></svg>
+            <h3>Не передавайте пароли</h3>
+            <p>Учетная запись закреплена за конкретным сотрудником. Передача логина и пароля коллегам запрещена даже для срочных задач.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="onec">
+      <div class="container two-column">
+        <div class="content-panel" data-reveal>
+          <p class="eyebrow">Учетные системы</p>
+          <h2>Правила использования 1С:Предприятие</h2>
+          <p>Работа с 1С влияет на учетные и производственные процессы, поэтому любые ошибки доступа, зависания и некорректные данные важно фиксировать подробно.</p>
+        </div>
+        <div class="rule-list" data-reveal>
+          <div class="rule-item">
+            <span>01</span>
+            <p>Входите только под своей учетной записью и завершайте сеанс перед уходом с рабочего места.</p>
+          </div>
+          <div class="rule-item">
+            <span>02</span>
+            <p>Не закрывайте программу принудительно во время проведения документов, обмена или формирования отчетов.</p>
+          </div>
+          <div class="rule-item">
+            <span>03</span>
+            <p>При ошибке сделайте скриншот, запишите базу, документ, время возникновения и передайте данные в ИТ-отдел.</p>
+          </div>
+          <div class="rule-item">
+            <span>04</span>
+            <p>Новые права доступа оформляются через руководителя подразделения с указанием роли сотрудника.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-band" id="support-order">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Техническая поддержка</p>
+          <h2>Порядок обращения в ИТ-отдел</h2>
+          <p>Чем точнее описана проблема, тем быстрее специалист сможет определить причину и предложить решение.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step-card" data-reveal>
+            <span class="step-number">1</span>
+            <h3>Опишите ситуацию</h3>
+            <p>Укажите ФИО, подразделение, кабинет, телефон, название программы или оборудования и текст ошибки.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span class="step-number">2</span>
+            <h3>Приложите детали</h3>
+            <p>Добавьте скриншот, номер принтера, имя компьютера или время сбоя, если эти данные известны.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span class="step-number">3</span>
+            <h3>Дождитесь регистрации</h3>
+            <p>Специалист уточнит приоритет, согласует время работ и сообщит, если потребуется доступ к рабочему месту.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="computer">
+      <div class="container two-column two-column-reverse">
+        <div class="illustration-panel" data-reveal>
+          <img src="assets/images/network-map.svg" alt="Декоративная схема подключения рабочих мест к серверной инфраструктуре" width="520" height="380">
+        </div>
+        <div class="content-panel" data-reveal>
+          <p class="eyebrow">Рабочее место</p>
+          <h2>Что делать при неисправности компьютера</h2>
+          <div class="check-list compact">
+            <div class="check-item">
+              <svg class="check-icon" aria-hidden="true"><use href="assets/images/icons.svg#check"></use></svg>
+              <span>Проверьте питание системного блока, монитора и сетевого фильтра.</span>
+            </div>
+            <div class="check-item">
+              <svg class="check-icon" aria-hidden="true"><use href="assets/images/icons.svg#check"></use></svg>
+              <span>Зафиксируйте сообщение на экране, код ошибки или характер неисправности.</span>
+            </div>
+            <div class="check-item">
+              <svg class="check-icon" aria-hidden="true"><use href="assets/images/icons.svg#check"></use></svg>
+              <span>Не разбирайте оборудование самостоятельно и не меняйте комплектующие без согласования.</span>
+            </div>
+            <div class="check-item">
+              <svg class="check-icon" aria-hidden="true"><use href="assets/images/icons.svg#check"></use></svg>
+              <span>Передайте заявку в ИТ-отдел с указанием кабинета и срочности задачи.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-band" id="no-network">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Диагностика</p>
+          <h2>Действия при отсутствии доступа к сети</h2>
+        </div>
+        <div class="diagnostic-grid">
+          <article class="diagnostic-card" data-reveal>
+            <strong>Проверьте кабель</strong>
+            <p>Убедитесь, что сетевой кабель плотно подключен к компьютеру и розетке. Индикаторы рядом с разъемом обычно должны мигать.</p>
+          </article>
+          <article class="diagnostic-card" data-reveal>
+            <strong>Сравните с коллегами</strong>
+            <p>Если сеть не работает у нескольких сотрудников в кабинете, сообщите об этом сразу: возможно, проблема на коммутаторе или линии.</p>
+          </article>
+          <article class="diagnostic-card" data-reveal>
+            <strong>Не меняйте настройки</strong>
+            <p>Не изменяйте IP-адрес, DNS и параметры прокси самостоятельно. Это может усложнить диагностику и восстановление.</p>
+          </article>
+          <article class="diagnostic-card" data-reveal>
+            <strong>Передайте данные</strong>
+            <p>В заявке укажите имя компьютера, кабинет, время пропадания сети и ресурсы, которые не открываются.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <details>
+            <summary>Как восстановить пароль?</summary>
+            <p>Сообщите в ИТ-отдел ФИО, подразделение и систему, к которой утрачен доступ. Для критичных систем может потребоваться подтверждение руководителя.</p>
+          </details>
+          <details>
+            <summary>Что делать, если не работает принтер?</summary>
+            <p>Проверьте питание, наличие бумаги и сообщение на дисплее. Укажите в заявке модель или инвентарный номер принтера, кабинет и документ, который не печатается.</p>
+          </details>
+          <details>
+            <summary>Как обратиться в техническую поддержку?</summary>
+            <p>Используйте форму на странице контактов, внутренний телефон или корпоративную почту. В обращении кратко опишите проблему и приложите скриншот, если он помогает понять ошибку.</p>
+          </details>
+          <details>
+            <summary>Как получить доступ к 1С?</summary>
+            <p>Доступ оформляется через руководителя подразделения. В заявке нужно указать базу 1С, роль сотрудника и перечень операций, которые должны быть доступны.</p>
+          </details>
+          <details>
+            <summary>Что делать при отсутствии сети?</summary>
+            <p>Проверьте сетевой кабель и уточните, есть ли такая же проблема у коллег. Не меняйте сетевые настройки самостоятельно и передайте информацию в ИТ-отдел.</p>
+          </details>
+          <details>
+            <summary>Как подключить новый компьютер?</summary>
+            <p>Заявка подается заранее. Нужно указать сотрудника, подразделение, рабочее место, требуемые программы, принтеры и сетевые ресурсы.</p>
+          </details>
+          <details>
+            <summary>Куда сообщать о неисправностях?</summary>
+            <p>Все неисправности рабочих компьютеров, принтеров, сети, 1С и корпоративных сервисов фиксируются через ИТ-отдел. Срочные сбои лучше продублировать по внутреннему телефону.</p>
+          </details>
+          <details>
+            <summary>Как установить корпоративное ПО?</summary>
+            <p>Установка выполняется специалистами ИТ-отдела. Самостоятельная установка программ на рабочий компьютер допускается только после согласования.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/images/favicon.svg" alt="" width="46" height="46">
+          </span>
+          <span>
+            <span class="brand-title">ИТ-отдел</span>
+            <span class="brand-subtitle">ООО «Металлопродукция»</span>
+          </span>
+        </a>
+        <p>Регламенты и рекомендации для сотрудников предприятия.</p>
+      </div>
+      <div>
+        <h2>Разделы</h2>
+        <a href="index.html">Главная</a>
+        <a href="instructions.html">Инструкции</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h2>Поддержка</h2>
+        <p>Тольятти, ООО «Металлопродукция»</p>
+        <p>В рабочие дни: 08:00-17:00</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> ООО «Металлопродукция»</span>
+      <span>Отдел информационных технологий</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Наверх" data-back-to-top>
+    <svg aria-hidden="true"><use href="assets/images/icons.svg#up"></use></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
